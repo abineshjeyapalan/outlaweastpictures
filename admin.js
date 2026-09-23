@@ -121,7 +121,7 @@
       const notice = document.createElement('div');
       notice.className = 'admin-notice';
       notice.innerHTML = 'No shared backend detected — edits are saved to this browser only. ' +
-        'Connect a Vercel KV store and set <code>ADMIN_SECRET</code> (same value as your admin password) to make edits live for every visitor. See README.md.';
+        'Connect a Redis database (Storage → Marketplace → Upstash) and set <code>ADMIN_SECRET</code> (same value as your admin password) to make edits live for every visitor. See README.md.';
       mainEl.appendChild(notice);
     }
 
