@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Outlaw East</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./admin.css">
+<link rel="icon" href="./assets/logo.jpg">
+</head>
+<body class="admin-body">
+
+<div id="loginGate" class="admin-gate">
+  <div class="admin-gate__box">
+    <div class="admin-gate__logo">OUTLAW <em>EAST</em></div>
+    <p class="admin-gate__label" id="gateLabel">Enter the admin password</p>
+    <input type="password" id="gatePassword" class="admin-gate__input" autocomplete="current-password" placeholder="Password">
+    <button class="btn btn--solid" id="gateSubmit" style="width:100%; justify-content:center;">Enter</button>
+    <p class="admin-gate__note" id="gateNote"></p>
+  </div>
+</div>
+
+<div id="adminApp" class="admin-app" hidden>
+  <header class="admin-header">
+    <div class="admin-header__logo">OUTLAW <em>EAST</em> <span>/ ADMIN</span></div>
+    <nav class="admin-tabs" id="adminTabs"></nav>
+    <div class="admin-header__actions">
+      <button class="btn btn--ghost" id="btnExport">Export JSON</button>
+      <button class="btn btn--ghost" id="btnImport">Import JSON</button>
+      <button class="btn btn--ghost" id="btnReset">Reset Defaults</button>
+      <a href="index.html" class="btn btn--solid">View Site →</a>
+    </div>
+  </header>
+
+  <input type="file" id="importFile" accept="application/json" hidden>
+
+  <main class="admin-main" id="adminMain"></main>
+
+  <div class="admin-toast" id="adminToast"></div>
+</div>
+
+<script src="./content.js"></script>
+<script src="./admin.js"></script>
+</body>
+</html>

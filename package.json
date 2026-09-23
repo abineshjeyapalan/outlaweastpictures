@@ -1,0 +1,9 @@
+{
+  "name": "outlaw-east",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Outlaw East studio site — static frontend + a small Vercel serverless API for shared admin content.",
+  "dependencies": {
+    "@vercel/kv": "^2.0.0"
+  }
+}

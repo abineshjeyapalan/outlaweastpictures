@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connect — Outlaw East</title>
+<meta name="description" content="Get in touch with Outlaw East, an independent film studio in Batticaloa, Sri Lanka.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="./assets/logo.jpg">
+</head>
+<body class="is-loading">
+
+<div class="preloader" id="preloader">
+  <div class="preloader__mark">OUTLAW <em>EAST</em></div>
+  <div class="preloader__bar"></div>
+</div>
+<noscript><style>.preloader{display:none}body.is-loading{overflow:visible;height:auto}</style></noscript>
+
+<div class="grain"></div>
+<div class="cursor" id="cursor"><span></span></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__logo">
+    <img src="./assets/logo.jpg" data-logo-src="./assets/logo.jpg" data-logo-mark alt="Outlaw East" class="nav__logo-mark">
+  </a>
+  <nav class="nav__links">
+    <a href="index.html#founders">Founders</a>
+    <a href="index.html#films">Films</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#faq">FAQ</a>
+  </nav>
+  <div class="nav__right">
+    <button class="theme-toggle" data-theme-toggle title="Toggle light / dark mode">
+      <span class="theme-toggle__sun">☼</span><span class="theme-toggle__moon">☾</span>
+    </button>
+    <a href="contact.html" class="nav__cta">Connect</a>
+  </div>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</header>
+
+<div class="nav__mobile" id="navMobile">
+  <a href="index.html#founders">Founders</a>
+  <a href="index.html#films">Films</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#faq">FAQ</a>
+  <a href="contact.html">Connect</a>
+  <button class="theme-toggle theme-toggle--mobile" data-theme-toggle>
+    <span class="theme-toggle__sun">☼</span><span class="theme-toggle__moon">☾</span><span class="theme-toggle__label">Light / Dark</span>
+  </button>
+</div>
+
+<main>
+
+  <section class="contact-hero">
+    <p class="eyebrow" data-reveal>Batticaloa, Sri Lanka</p>
+    <h1 class="contact-hero__title" data-reveal>Let's make<br><em>something</em>.</h1>
+    <p class="contact-hero__sub" data-reveal>Whether you're a filmmaker looking to join the crew, a producer with a story, or a festival programmer — we'd like to hear from you.</p>
+  </section>
+
+  <section class="wrap">
+    <div class="contact-grid">
+      <div data-reveal>
+        <div class="contact-info__block">
+          <p class="contact-info__label">Email</p>
+          <p class="contact-info__value"><a href="mailto:info@outlaweast.lk">info@outlaweast.lk</a></p>
+          <p class="contact-info__sub">General enquiries, press, and co-productions.</p>
+        </div>
+        <div class="contact-info__block">
+          <p class="contact-info__label">Phone</p>
+          <p class="contact-info__value">+94 65 222 1854</p>
+          <p class="contact-info__sub">Mon–Fri, 9am–5pm (GMT+5:30)</p>
+        </div>
+        <div class="contact-info__block">
+          <p class="contact-info__label">Studio</p>
+          <p class="contact-info__value">Batticaloa,<br>Eastern Province,<br>Sri Lanka</p>
+        </div>
+        <div class="contact-info__block" style="border-bottom:none;">
+          <p class="contact-info__label">Elsewhere</p>
+          <div class="socials">
+            <a href="#" data-social="instagram">Instagram</a>
+            <a href="#" data-social="letterboxd">Letterboxd</a>
+            <a href="#" data-social="vimeo">Vimeo</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-reveal>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="role">I am a…</label>
+              <select id="role" name="role">
+                <option>Filmmaker / Crew</option>
+                <option>Producer / Studio</option>
+                <option>Festival / Press</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="portfolio">Reel / Portfolio Link</label>
+              <input type="url" id="portfolio" name="portfolio" placeholder="https://">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field field--full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+          </div>
+          <div class="form-foot">
+            <button type="submit" class="btn btn--solid">Send Message <span class="btn__arrow">→</span></button>
+            <span class="form-status" id="formStatus">Message received — we'll be in touch shortly.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight" id="filmmakers">
+    <div class="wrap">
+      <div class="section__head" data-reveal>
+        <h2 class="section__title">We are looking for <em>filmmakers</em>.</h2>
+        <p class="section__note">On staff or per-project — if you make things for a living and take it seriously, we want to know you exist.</p>
+      </div>
+      <div class="roles" data-reveal data-role-chips></div>
+      <p class="section__note" data-reveal style="margin-top:30px; max-width:560px;">Use the form above, set "I am a…" to Filmmaker / Crew, and drop a link to your reel or recent work. We read every submission.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <div class="footer__logo">OUTLAW <em>EAST</em></div>
+        <p class="footer__tag">An independent film studio based in Batticaloa, Sri Lanka.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Site</h4>
+          <a href="index.html#founders">Founders</a>
+          <a href="index.html#films">Films</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4>Studio</h4>
+          <span>Batticaloa, Sri Lanka</span>
+          <a href="contact.html">Connect</a>
+          <a href="contact.html#filmmakers">We're Hiring</a>
+        </div>
+        <div class="footer__col">
+          <h4>Elsewhere</h4>
+          <a href="#" data-social="instagram">Instagram</a>
+          <a href="#" data-social="letterboxd">Letterboxd</a>
+          <a href="#" data-social="vimeo">Vimeo</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Outlaw East Studios. All rights reserved.</p>
+      <p>Batticaloa, Sri Lanka</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./content.js"></script>
+<script src="./render.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
